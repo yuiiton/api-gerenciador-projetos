@@ -38,7 +38,7 @@ def update_project(project_update: ProjectUpdate, project_id: int, session: Sess
 
     update_data = project_update.model_dump(exclude_unset=True)
 
-    project.model_update(update_data)
+    project.sqlmodel_update(update_data)
 
     session.add(project)
     session.commit()
