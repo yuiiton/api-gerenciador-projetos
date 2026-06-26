@@ -1,7 +1,15 @@
+# =====================
+# BACKEND
+# =====================
 __pycache__/
 *.pyc
-database.db
-limpar_cache.py
-.venv/
-venv/
-env/
+.env
+.venv
+
+# =====================
+# FRONTEND
+# =====================
+node_modules/
+dist/
+.env
+.DS_Store
