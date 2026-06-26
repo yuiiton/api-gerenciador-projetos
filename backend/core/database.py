@@ -1,7 +1,7 @@
 from sqlmodel import SQLModel, create_engine, Session
 from contextlib import asynccontextmanager
 
-engine = create_engine("sqlite:///database.db", connect_args={"check_same_thread": False})
+engine = create_engine("sqlite:///./data/app.db", connect_args={"check_same_thread": False})
 
 def create_tables():
     """Cria todas as tabelas definidas nos modelos SQLModel no banco de dados."""
